@@ -103,12 +103,12 @@ hr {
     margin: 1vh auto;
     padding: 1rem;
     max-width: 1000px;
-    text-align: center;
 }
 
 .article-header {
     letter-spacing: 2px;
     text-decoration: underline;
+    text-align: center;
 }
 
 .article-grid {
@@ -163,5 +163,4 @@ hr {
 
     font-size: 25px;
     line-height: 1.5;
-    text-align: left;
 }
