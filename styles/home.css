@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.8;
+
+    font-family: 'Lato';
+    font-size: 18px;
+    word-spacing: .1em;
+    color: #28282B;
+
+    background-color: #F9F6EE;
+}
+
+a {
+    transition: 0.5s;
+
+    color: #28282B;
+}
+a:hover {
+    color: #4e585f;
+}
+
+.navbar {
+    display: flex;
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    gap: 2rem;
+    margin: 0;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    gap: 1rem;
+    
+    span {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
+.nav a {
+    gap: 2rem;
+    margin: 1rem;
+
+    text-decoration: none;
+}
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.navbar:first-child {
+    margin-left: 2rem;
+    margin-right: auto;
+}
+
+.logo {
+    font-family: 'Macondo';
+    text-decoration: none;
+}
+.logo:hover {
+    color: #28282B;
+}
+
+.blockhead {
+    display: flex;
+    margin: 6rem auto;
+    max-width: 700px;
+
+    justify-content: center;
+    align-items: center;
+
+    .slogan {
+        margin-right: 1rem;
+        text-align: right;
+    
+        font-size: 50px;
+        font-family: 'Macondo';
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+
+#articles {
+    margin: 1vh auto;
+    padding: 1rem;
+    max-width: 1000px;
+}
+
+.article-header {
+    text-decoration: underline;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 50px 100px;
+
+    margin: 2rem auto;
+    padding: 0.5rem 5rem;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    border-radius: 0.5rem;
+    border: 1px solid #4e585f;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.5px;
+    text-decoration: none;
+
+    transition: transform 1s;
+
+    img {
+        height: 200px;
+        width: 100%;        
+        object-fit: cover;
+
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+}
+.blog-card:hover {
+    transform: scale(1.05);
+}
+
+.card-details {
+    width: 100%;
+    margin-left: 20px;
+    padding-top: 10px;
+
+    font-size: 14px;
+    text-align: left;
+    color: #4e585f;
+}
+
+.card-title {
+    overflow-wrap: break-word;
+    padding: 10px 20px;
+
+    font-size: 25px;
+    line-height: 1.5;
+}

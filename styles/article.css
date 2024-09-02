@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.8;
+
+    font-family: 'Lato';
+    font-size: 18px;
+    word-spacing: .1em;
+    color: #28282B;
+
+    background-color: #F9F6EE;
+}
+
+main {
+    margin: 1vh auto;
+    padding: 1rem;
+    max-width: 700px;
+}
+
+h2,
+h3 {
+    line-height: 2;
+
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+figcaption {
+    margin-bottom: 1rem;
+
+    font-size: 14px;
+    font-style: italic;
+    color: #4e585f;
+
+    a {
+        color: #4e585f;
+    }
+    a:hover {
+        color: #28282B;
+    }
+}
+
+a {
+    transition: 0.5s;
+
+    color: #28282B;
+}
+a:hover {
+    color: #4e585f;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+.navbar {
+    display: flex;
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    gap: 2rem;
+    margin: 0;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    gap: 1rem;
+    
+    span {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
+.nav a {
+    gap: 2rem;
+    margin: 1rem;
+
+    text-decoration: none;
+}
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.navbar:first-child {
+    margin-left: 2rem;
+    margin-right: auto;
+}
+
+.logo {
+    font-family: 'Macondo';
+    text-decoration: none;
+}
+.logo:hover {
+    color: #28282B;
+}
+
+.title {
+    font-weight: 800;
+}
+
+.blog-details {
+    display: flex;
+    margin-top: 1.5rem;
+    padding-left: 2rem;
+
+    align-items: center;
+}
+
+.details {
+    font-size: 15px;
+    font-weight: 600;
+    color: #4e585f;
+    text-indent: 1em;
+}
+
+.author-img {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.subhead {
+    font-size: 20px;
+}
+
+.content-img {
+    margin: 2em;
+    margin-bottom: 5px;
+    max-width: 90%;
+
+    transition: transform 1s;
+}
+.content-img:hover {
+    transform: scale(1.2);
+}
+
+.conclusion {
+    font-size: 25px;
+}
+
+.reference-title {
+    margin: 1.5rem auto;
+}
+
+.reference-list {
+    padding-left: 75px;
+    list-style-type: none;
+
+    text-indent: -50px;
+
+    font-size: 15px;
+}
+.reference-list li {
+    margin-top: 20px;
+}
