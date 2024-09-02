@@ -24,6 +24,15 @@ a:hover {
     color: #4e585f;
 }
 
+hr {
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 25px;
+    
+    border: none;
+    border-top: 1px solid #4e585f;
+}
+
 .navbar {
     display: flex;
     width: calc(100% - 2rem);
@@ -73,15 +82,15 @@ a:hover {
 
 .blockhead {
     display: flex;
-    margin: 6rem auto;
-    max-width: 700px;
+    margin: 5rem auto;
+    max-width: 1000px;
 
     justify-content: center;
     align-items: center;
 
     .slogan {
         margin-right: 1rem;
-        text-align: right;
+        text-align: center;
     
         font-size: 50px;
         font-family: 'Macondo';
@@ -94,9 +103,11 @@ a:hover {
     margin: 1vh auto;
     padding: 1rem;
     max-width: 1000px;
+    text-align: center;
 }
 
 .article-header {
+    letter-spacing: 2px;
     text-decoration: underline;
 }
 
@@ -113,7 +124,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
 
     border-radius: 0.5rem;
     border: 1px solid #4e585f;
@@ -133,6 +144,7 @@ a:hover {
 }
 .blog-card:hover {
     transform: scale(1.05);
+    color: #28282B;
 }
 
 .card-details {
@@ -151,4 +163,5 @@ a:hover {
 
     font-size: 25px;
     line-height: 1.5;
+    text-align: left;
 }
