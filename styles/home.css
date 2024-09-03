@@ -114,6 +114,9 @@ hr {
     .slogan {
         margin-right: 1rem;
         text-align: center;
+
+        user-select: none;
+        cursor: default;
     
         font-size: 50px;
         font-family: 'Macondo';
@@ -132,6 +135,9 @@ hr {
     letter-spacing: 2px;
     text-decoration: underline;
     text-align: center;
+
+    user-select: none;
+    cursor: default;
 }
 
 .article-grid {
