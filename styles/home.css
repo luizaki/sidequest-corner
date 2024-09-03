@@ -63,13 +63,31 @@ hr {
 }
 
 .nav a {
+    display: inline-block;
+    position: relative;
+
     gap: 2rem;
     margin: 1rem;
 
     text-decoration: none;
 }
-.nav a:hover {
-    text-decoration: underline;
+.nav a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+
+    background-color: #4e585f;
+    height: 1px;
+}
+.nav a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .navbar:first-child {
