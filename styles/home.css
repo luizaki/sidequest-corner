@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    position: relative;
     line-height: 1.8;
 
     font-family: 'Lato';
@@ -170,13 +171,10 @@ hr {
 }
 
 .scroll-top {
-    --offset: 500px; 
-
-    position: sticky;
+    position: fixed;
     float: right;
     z-index: 99;
     padding: 5px;
-    margin-top: calc(100vh + var(--offset));
     bottom: 20px;
     right: 150px;
     width: 4%;
